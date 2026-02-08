@@ -30,7 +30,7 @@ Before running this project, make sure you have the following installed:
 
 1. **Clone the repository** (if you haven't already):
    ```bash
-   git clone https://github.com/alankar25/CodeSync
+   git clone https://github.com/rahul2762/codesync-react.git
    cd CodeSync-main
    ```
 
