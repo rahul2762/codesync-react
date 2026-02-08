@@ -1,0 +1,283 @@
+.homePageWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    height: 100vh;
+}
+
+.formWrapper {
+    background: #282a36;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 90%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+footer a {
+    color: #4aee88;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainLabel {
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.homePageLogo {
+    height: 80px;
+    margin-bottom: 30px;
+}
+
+.inputBox {
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin-bottom: 14px;
+    background: #eee;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.joinBtn,
+.leaveBtn {
+    background: #4aed88;
+    width: 100px;
+    margin-left: auto;
+}
+
+.joinBtn:hover,
+.leaveBtn:hover {
+    background: #2b824c;
+}
+
+.reconnectBtn {
+    background: #ffd93d;
+    color: #333;
+}
+
+.reconnectBtn:hover {
+    background: #ffc107;
+}
+
+.createInfo {
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.createNewBtn {
+    color: #4aed88;
+    text-decoration: none;
+    border-bottom: 1px solid #4aed88;
+    transition: all 0.3s ease-in-out;
+}
+
+.createNewBtn:hover,
+footer a:hover {
+    color: #368654;
+    border-color: #368654;
+}
+
+.mainWrap {
+    display: grid;
+    grid-template-columns: 230px 1fr;
+}
+
+.aside {
+    background: #1c1e29;
+    padding: 16px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.asideInner {
+    flex: 1;
+}
+
+.clientsList {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.client {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+}
+.userName {
+    margin-top: 10px;
+}
+
+.logo {
+    border-bottom: 1px solid #424242;
+    padding-bottom: 10px;
+}
+
+.logoImage {
+    height: 60px;
+}
+
+.leaveBtn {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.connectionStatus {
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 5px;
+    background: #2a2d3a;
+    border: 1px solid #424242;
+}
+
+.statusIndicator {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.statusIndicator.connected {
+    color: #4aed88;
+}
+
+.statusIndicator.disconnected {
+    color: #ff6b6b;
+}
+
+.reconnectingIndicator {
+    font-size: 12px;
+    color: #ffd93d;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.editorWrap {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.editorHeader {
+    background: #1c1e29;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #424242;
+}
+
+.languageSelector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+}
+
+.languageSelector label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.languageSelect {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #424242;
+    background: #282a36;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+}
+
+.languageSelect:hover {
+    border-color: #4aed88;
+}
+
+.languageSelect:focus {
+    border-color: #4aed88;
+    box-shadow: 0 0 5px rgba(74, 237, 136, 0.3);
+}
+
+.runBtn {
+    background: #4aed88;
+    color: #1c1e29;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.runBtn:hover:not(:disabled) {
+    background: #2b824c;
+    transform: translateY(-2px);
+}
+
+.runBtn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.CodeMirror {
+    flex: 1;
+    font-size: 20px;
+    line-height: 1.6;
+    padding-top: 20px;
+}
+
+.outputPanel {
+    background: #1c1e29;
+    border-top: 2px solid #424242;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.outputHeader {
+    background: #282a36;
+    padding: 10px 20px;
+    color: #4aed88;
+    font-weight: bold;
+    border-bottom: 1px solid #424242;
+}
+
+.outputContent {
+    flex: 1;
+    padding: 15px 20px;
+    margin: 0;
+    overflow-y: auto;
+    color: #fff;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
